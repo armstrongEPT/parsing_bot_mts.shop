@@ -248,33 +248,33 @@ def callback_inline(call):
 
     elif call.data == 'Аксессуары':
         kb_acsess = types.InlineKeyboardMarkup()
-        kb_zas = types.InlineKeyboardButton(text='Защита', callback_data='x211')
-        kb_pit = types.InlineKeyboardButton(text='Питание', callback_data='x221t')
-        kb_audio = types.InlineKeyboardButton(text='Аудио', callback_data='x231')
-        kb_mem = types.InlineKeyboardButton(text='Память', callback_data='x241')
-        kb_ant = types.InlineKeyboardButton(text='Антенны', callback_data='x251')
+        kb_zas = types.InlineKeyboardButton(text='Защита', callback_data='x211qw')
+        kb_power = types.InlineKeyboardButton(text='Питание', callback_data='x221qw')
+        kb_audio = types.InlineKeyboardButton(text='Аудио', callback_data='x231qw')
+        kb_mem = types.InlineKeyboardButton(text='Память', callback_data='x241qw')
+        kb_ant = types.InlineKeyboardButton(text='Антенны', callback_data='x251qw')
         img = open('images/ac.png', 'rb')
-        kb_acsess.add(kb_zas, kb_pit, kb_audio, kb_mem, kb_ant)
+        kb_acsess.add(kb_zas, kb_power, kb_audio, kb_mem, kb_ant)
         bot.send_photo(call.message.chat.id, img)
         bot.send_message(call.message.chat.id, text=f'{call.from_user.first_name} Выберите тип из категории и получите файл!', reply_markup=kb_acsess)
 
-    elif call.data == 'x211':
+    elif call.data == 'x211qw':
         with open('property.csv') as file:
             bot.send_message(call.message.chat.id, text='собираю информацию, пожалуйста подождите')
             bot.send_document(call.message.chat.id, file)
-    elif call.data == 'x221t':
+    elif call.data == 'x221qw':
         with open('power.csv') as file:
             bot.send_message(call.message.chat.id, text='собираю информацию, пожалуйста подождите')
             bot.send_document(call.message.chat.id, file)
-    elif call.data == 'x231':
+    elif call.data == 'x231qw':
         with open('audio.csv') as file:
             bot.send_message(call.message.chat.id, text='собираю информацию, пожалуйста подождите')
             bot.send_document(call.message.chat.id, file)
-    elif call.data == 'x241':
+    elif call.data == 'x241qw':
         with open('memory.csv') as file:
             bot.send_message(call.message.chat.id, text='собираю информацию, пожалуйста подождите')
             bot.send_document(call.message.chat.id, file)
-    elif call.data == 'x251':
+    elif call.data == 'x251qw':
         with open('antennas.csv') as file:
             bot.send_message(call.message.chat.id, text='собираю информацию, пожалуйста подождите')
             bot.send_document(call.message.chat.id, file)
