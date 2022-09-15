@@ -27,7 +27,6 @@ def get_modems(html):
                 'link_title': HOST + item.find('div', class_='products__unit__title').find('a').get('href'),
                 'title_info': item.find('div', class_='products__unit__info').get_text(strip=True),
                 'title_price': item.find('div', class_='products__unit__price').get_text(strip=True),
-                'title_asd': item.find('div', class_='products__unit__section').get_text(strip=True)
             }
         )
     return modems
@@ -39,14 +38,14 @@ def save_modems(items, path):
         writer.writerow(['name', 'link', 'info', 'price', 's'])
         for item in items:
             writer.writerow(
-                [item['title'], item['link_title'], item['title_info'], item['title_price'], item['title_asd']])
+                [item['title'], item['link_title'], item['title_info'], item['title_price']])
 
 
 def parser_modems():
     html = get_html(URL_mod)
     if html.status_code == 200:
         modems = []
-        for html in range(1, 3):
+        for html in range(1):
             html = get_html(URL_mod)
             modems.extend(get_modems(html.text))
             save_modems(modems, CSV_modem)

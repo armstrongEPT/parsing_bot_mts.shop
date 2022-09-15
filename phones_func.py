@@ -51,56 +51,56 @@ def parser_phones():
     html = get_html(URL_Xiaomi_phones)
     if html.status_code == 200:
         xi_phones = []
-        for page in range(1, 10):
+        for page in range(1):
             html = get_html(URL_Xiaomi_phones, params={'page': page})
             xi_phones.extend(get_phones(html.text))
             save_phones(xi_phones, CSV_xiaomi)
     html2 = get_html(URL_Apple_phones)
     if html2.status_code == 200:
         apple_phones = []
-        for page in range(1, 10):
+        for page in range(1):
             html2 = get_html(URL_Apple_phones, params={'page': page})
             apple_phones.extend(get_phones(html2.text))
             save_phones(apple_phones, CSV_apple)
     html3 = get_html(URL_Samsung_phones)
     if html3.status_code == 200:
         samsung_phones = []
-        for page in range(1, 10):
+        for page in range(1):
             html3 = get_html(URL_Apple_phones, params={'page': page})
             samsung_phones.extend(get_phones(html3.text))
             save_phones(samsung_phones, CSV_samsung)
     html4 = get_html(URL_Huawei_phones)
     if html4.status_code == 200:
         huawei_phones = []
-        for page in range(1, 10):
+        for page in range(1):
             html4 = get_html(URL_Huawei_phones, params={'page': page})
             huawei_phones.extend(get_phones(html4.text))
             save_phones(huawei_phones, CSV_huawei)
     html5 = get_html(URL_Honor_phones)
     if html5.status_code == 200:
         honor_phones = []
-        for page in range(1, 10):
+        for page in range(1):
             html5 = get_html(URL_Honor_phones, params={'page': page})
             honor_phones.extend(get_phones(html5.text))
             save_phones(honor_phones, CSV_honor)
     html6 = get_html(URL_Realme_phones)
     if html6.status_code == 200:
         realme_phones = []
-        for page in range(1, 10):
+        for page in range(1):
             html6 = get_html(URL_Realme_phones, params={'page': page})
             realme_phones.extend(get_phones(html6.text))
             save_phones(realme_phones, CSV_realme)
     html7 = get_html(URL_TCL_phones)
     if html7.status_code == 200:
         tcl_phones = []
-        for page in range(1, 10):
+        for page in range(1):
             html7 = get_html(URL_TCL_phones, params={'page': page})
             tcl_phones.extend(get_phones(html7.text))
             save_phones(tcl_phones, CSV_tcl)
     html8 = get_html(URL_POCO_phones)
     if html8.status_code == 200:
         poco_phones = []
-        for page in range(1, 10):
+        for page in range(1):
             html8 = get_html(URL_POCO_phones, params={'page': page})
             poco_phones.extend(get_phones(html8.text))
             save_phones(poco_phones, CSV_poco)

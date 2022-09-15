@@ -38,22 +38,37 @@ CSV_kswh = 'kids_smart_watches_huawei.csv'
 #модемы
 CSV_modem = 'modem.csv'
 #ноуты
-CSV_la = 'laptops_apple'
-CSV_lh = 'laptops_honor'
-CSV_lhh = 'laptops_huawei'
-CSV_lp = 'laptops_prestigio'
+CSV_la = 'laptops_apple.csv'
+CSV_lh = 'laptops_honor.csv'
+CSV_lhh = 'laptops_huawei.csv'
+CSV_lp = 'laptops_prestigio.csv'
 #планшеты
-CSV_ts = 'tablet_samsung'
-CSV_th = 'tablet_huawei'
-CSV_tl = 'tablet_lenovo'
-CSV_tx = 'tablet_xiaomi'
-CSV_tp = 'tablet_prestigio'
-CSV_tc = 'tablet_tcl'
+CSV_ts = 'tablet_samsung.csv'
+CSV_th = 'tablet_huawei.csv'
+CSV_tl = 'tablet_lenovo.csv'
+CSV_tx = 'tablet_xiaomi.csv'
+CSV_tp = 'tablet_prestigio.csv'
+CSV_tc = 'tablet_tcl.csv'
 #тв приставки
-CSV_ta = 'tv_box_apple'
-CSV_tx = 'tv_box_xiaomi'
-CSV_ty = 'tv_box_yandex'
+CSV_ta = 'tv_box_apple.csv'
+CSV_tx = 'tv_box_xiaomi.csv'
+CSV_ty = 'tv_box_yandex.csv'
 #тв
-CSV_tv = 'tv'
-#
-#
+CSV_tv = 'tv.csv'
+#защита
+CSV_prot = 'property.csv'
+#питание
+CSV_power = 'power.csv'
+#аудио
+CSV_audio = 'audio.csv'
+#память
+CSV_memory = 'memory.csv'
+#антенны
+CSV_ant = 'antennas.csv'
+#умная техника
+CSV_smtx = 'smart_tec_xiaomi.csv'
+CSV_smty = 'smart_tec_yandex.csv'
+#датчики
+CSV_dat = 'dat.csv'
+#колонки
+CSV_spe = 'speaker.csv'
