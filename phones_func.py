@@ -1,6 +1,4 @@
-import telebot
-from telebot import types
-import csv
+
 import bs4
 import requests
 from my_urls import *
